@@ -24,6 +24,9 @@ body {
     align-self: flex-start;
 }
 /* SEARCHBAR */
+form {
+    position: sticky;
+}
 
 #searchbox {
     display: flex;
@@ -35,7 +38,7 @@ body {
     border-radius: 24px;
 }
 
-#searchbox-div:hover {
+#searchbox:hover {
     box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
 }
 
@@ -182,52 +185,43 @@ body {
 /* RESULTS SIDEBAR */
 
 #result-sidebar {
-    width: 80%;
-    height: auto;
+    width: 85%;
+    max-height: auto;
     border: 1px solid rgb(223, 225, 229);
     border-radius: 4px;
-    padding: 1% 0;
-    color: rgb(60, 64, 67);
-
+    align-self: flex-start;
+    overflow: hidden;
 }
 
 #result-sidebar h2 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: rgb(40, 44, 47);
     border-bottom: 1px solid rgb(223, 225, 229);
-    padding: 0 2vw;
-    margin: 0 0 0 0;
+    padding: 0 5% 3% 5%;
+    font-weight: normal;
 }
 
 #result-sidebar h2 img {
-    width: 10%;
+    width: 1.5vw;
     float: right;
 }
 
 #result-sidebar p {
-    padding: 0 1vw;
     color: rgb(60, 64, 67);
     font-size: 0.9rem;
-    word-spacing: normal;
-    text-align: justify;
+    word-spacing: 0.30rem;
+    padding: 0 5%;
 }
-
-
 
 #result-sidebar-img {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    width: 90%;
-    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+} 
+
+#result-sidebar-img img { 
+    max-width: 60%;
+    max-height: 60%;
 }
 
-#result-sidebar-img img {
-
-}
 
 /* FOOTER */
 
